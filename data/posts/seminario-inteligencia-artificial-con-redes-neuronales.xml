@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><title><![CDATA[Seminario: Inteligencia Artificial con Redes Neuronales]]></title><date><![CDATA[Wed, 01 Jan 2014 11:31:00 +0100]]></date><tags><![CDATA[]]></tags><private><![CDATA[]]></private><image><![CDATA[]]></image><content><![CDATA[&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;./data/uploads/cartel-ia.jpg&quot; style=&quot;width: 50%; height: 100%; float: left;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Facultad de Ciencias, Jueves 16 de Octubre, 16:00 – 20:00&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;¡Ven y conoce más sobre esta fascinante rama de la informática, la inteligencia artificial! Conocerás los conceptos básicos de las Redes Neuronales y cómo estas se están utilizando en los avances tecnológicos más impresionantes. Luego, tendrás la oportunidad de aplicar estos conocimientos&amp;nbsp;en un taller práctico al programar dos videojuegos que hacen uso de la inteligencia artificial.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Contenido del Seminario:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;– Una parte teórica donde se hablará de los fundamentos de las&amp;nbsp;redes&amp;nbsp;neuronales, los principios biológicos sobre los cuales se basan, y las aplicaciones tecnológicas donde estas se pueden poner en uso.&lt;/p&gt;
+
+&lt;p&gt;– Una sesión de avances, donde se mostrará y explicará las aplicaciones más recientes y exitosas que forman el estado del arte actual de las&amp;nbsp;redes&amp;nbsp;neuronales profundas.&lt;/p&gt;
+
+&lt;p&gt;– Un taller práctico e interactivo donde se aprenderá a programar con&amp;nbsp;redes&amp;nbsp;neuronales y algorítmos genéticos, con el fin de darle habilidades de inteligencia artificial a dos videojuegos.&lt;/p&gt;
+
+&lt;p&gt;El seminario&amp;nbsp;es gratuito y está abierto a cualquier persona que tenga interés en avances informáticos y tecnológicos.&amp;nbsp;Es necesario registrarse en http://usal.acm.org/ia. Al finalizar se entregará un certificado de asistencia a todos los inscritos.&lt;/p&gt;
+
+&lt;p&gt;Para el taller práctico, se recomienda tener conocimientos básicos de programación en Java, y traer un ordenador portatil para participar en los tutoriales. Sería conveniente&amp;nbsp;tener un IDE con Java instalado y las librerías que vamos a usar descargadas. Para evitar problemas de compatibilidad y configuraciones se recomienda utilizar NetBeans o Eclipse sobre Windows 7 (x86 o x64).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Enlace al IDE (elige tu favorito):&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;NetBeans junto al JDK &lt;/strong&gt;(Java Development Kit) puede descargarse &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-142931.html&quot;&gt;aquí &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Eclipse junto al JDK&amp;nbsp;&lt;/strong&gt;(Java Development Kit) puede descargarse aquí: &lt;a href=&quot;http://eclipse.org/downloads/packages/eclipse-ide-java-developers/lunasr1&quot;&gt;http://eclipse.org/downloads/packages/eclipse-ide-java-developers/lunasr1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Enlaces a las librerías:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Encog 3.2.0 &lt;/strong&gt;(Librería de Redes neuronales para Java) puede descargarse aquí: &lt;a href=&quot;https://code.google.com/p/encog-java/downloads/detail?name=encog-examples-3.2.0-release.zip&amp;amp;can=2&amp;amp;q=&quot;&gt;https://code.google.com/p/encog-java/downloads/detail?name=encog-examples-3.2.0-release.zip&amp;amp;can=2&amp;amp;q=&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Slick2D &lt;/strong&gt;(Librería para la programación de videojuegos 2D en java) puede descargarse aquí: &lt;a href=&quot;http://slick.ninjacave.com/&quot;&gt;http://slick.ninjacave.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;LWJGL &lt;/strong&gt;(Librería necesaria para el funcionamiento de Slick2D) puede descargarse desde aquí: &lt;a href=&quot;http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.1/&quot;&gt;http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.1/&lt;/a&gt;&lt;/p&gt;
+]]></content></item>

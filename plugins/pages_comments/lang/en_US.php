@@ -1,0 +1,291 @@
+<?php
+//set internationalization translate to english
+
+
+
+
+
+	$i18n = array (
+        "NEWS" => 'Pages & Comments',
+		"MSG_CAPTCHA_FAILED" => 'Captcha failed, please try again.',
+		"WHO" => 'from',
+        "MSG_pcSUC" => 'Thank you for you comment.',
+		"MSG_pcERR" => 'There was an error sending your comment.',
+        "pc_FORM_SUB" => 'Form Submission',
+        "cmm" => 'Comments',
+        "news" => 'Write a New Comment',
+        "acpt" => 'Accept',
+        "canc" => 'Cancel',
+        "readm" => 'Read More',
+        "pubd" => 'Published on',
+        "pubb" => 'Published by',
+        "YES" => 'YES',
+        "NO" => 'NO',
+        "BACK" => 'Back',
+        "Save" => 'Save',
+        "Add" => 'Add', 
+        "filter" => 'Filter',
+        "notfile" => 'Unable to load the comment form and comments because there is no file pc_manager.xml.',
+        "pc_home" => 'Home',
+        "pc_del" => 'Delete',
+        "pc_delcom" => 'Delete comments?',
+        "pc_delcommain" => 'If you want remove this comment contact with admin of web,\nbecause has asocciated comments.', 
+        "pc_newcom" => 'New comment',
+        "pc_on" => 'on',
+        "pc_expand" => 'Expand thread', 
+        "pc_collapse" => 'Collapse thread',
+        "pc_notfilehlp" => 'Sorry, this file does not exist.', 
+        "pc_lastcom" => 'Recent Comments',//////////////////
+        "pc_notcomment" => 'There are no comments.',//////////////////
+        "pc_answ" => 'Answer',//--------------
+        "pc_ratingup" => 'I like this comment.',//--------------
+        "pc_ratingdown" => 'Don\'t like this comment.',//--------------
+        "pc_resend" => 'Please, you forward again the comment.',//----ENGLISH
+
+        //Settings
+        "pc_NCMNG" => 'Pages & Comments Manager',
+        "pc_NEWS" => 'Pages with Comments',
+        "pc_mng" => 'Add comments to Pages',
+        "pc_hlp" => 'Help',
+        "pc_fl" => 'File Name',
+        "pc_pg" => 'Page',
+        "pc_pgttl" => 'Page Title',
+        "pc_is" => 'News(Y/N)',
+        "pc_add" => 'Add comments to page',
+        "pc_del" => 'Delete system comments of page',
+        "pc_com" => 'Commts.',
+        "pc_comc" => 'Comments',
+        "pc_vcom" => 'View Comments',
+        "pc_edopt" => 'Edit Options',
+        "pc_grp" => 'Group Options',
+        "pc_fadd" => 'First, add it',
+        "pc_aedt" => 'Then, edit',
+        "pc_bckup" => 'Backups',
+        "pc_view" => 'view',
+        "pc_viewpage" => 'View page', 
+        "pc_modcom" => 'This comment will not be displayed until it has been accepted',
+        "pc_unpub" => 'Unpublish this comment.',
+        "pc_ocult" => 'Hide',
+        "pc_admin" => 'by the administrators.',
+        "pc_cred" => 'Credits',
+        "pc_tpord_cm" => 'Type of order of comments',
+        "pc_ord_ls" => 'Nº order in list of pages for this group',
+        "pc_sett" => 'Settings',
+        "pc_settl" => 'General configuration',
+        "pc_lang" => 'Language to use:',
+        "pc_ffpost" => 'Comments date format',
+        "pc_ffnews" => 'News date format',
+        "pc_social" => 'Social share',
+        "pc_phpmailer" => 'Use class phpmailer.', 
+        "pc_notifmail" => 'Receive notification by email', 
+        "pc_mailst" => 'Use standar function.', 
+        "pc_nonotifmail" => 'Do not receive notification by email.', 
+        "pc_free1" => 'Free 1',
+        "pc_free2" => 'Free 2',
+        "pc_default" => 'default values for comments', 
+        "pc_hide" => 'hide', 
+        "pc_autmgrp" => 'Automatic group', 
+        "pc_q_autmgrp" => 'the page will be automatically added to a group if in <b>Tags of page of admin</b> has a tag like: _pcgroup:yougroup.', 
+        "pc_comments_rct" => 'Number of comments for "Recents Comments"',
+		"pc_integrate" => 'To integrate in blog\'s plugin', //-------------
+		"pc_integrNM" => 'To integrate in NEWS MANAGER', //--------
+		"pc_integrNM_pg" => 'Page that displays posts of News manager', //-----------
+		"pc_postsNM" => 'Posts of News manager', //-----------
+		"pc_integrGS" => 'To integrate in GS BLOG', //----------
+		"pc_integrGS_pg" => 'Page that displays posts of GS BLOG', //-------
+		"pc_postsGS" => 'Posts of GS BLOG', //-----------
+		"pc_posts" => 'Posts', //---------------
+		"pc_publish" => 'To publish comments', //---------
+		"pc_allowrep" => 'To allow replies', //--------
+		"pc_replies_hd" => 'Replies are hidden by default', //--------------------
+		"pc_numword" => 'Maximum number of characters for comment (value 0 no limit)', //--------
+		"pc_numword_dp" => 'Maximum number of characters for comment', //--------
+		"pc_blackls" => 'Black list of words', //--------
+		"pc_blackls_w" => 'Black list of words (separated by commas)', //--------
+		"pc_rating" => 'Support comments ratings', //--------
+		"pc_rating_tp" => 'Type of ratings', //--------
+		"pc_socialmed" => 'To integrate with social media', //--------
+		"pc_socialmed_tp" => 'Type of social media', //--------
+		"pc_inappro" => 'Report inappropriate comments', //--------
+		"pc_inappro_tp" => 'Type of label for inappropriate comments', //--------
+		"pc_notify_upd" => 'Notify of update of comment',  //---------
+		"pc_vote" => 'Rating', //------------
+		"pc_emptyemail" => 'Field email is empty, please enter a valid email address.', //------------
+
+	//add pages
+        "pc_pagsav" => 'Comments section has been added.',   
+        "pc_pagyasav" => 'A comments section has already been added. It is not necessary to add another!',
+        "pc_addpagcomm" => 'Select "Add" to add a comments system into a page that already exists.',
+
+	//del pages
+        "pc_delsure" => 'Are you sure?',
+    	"pc_delpag" => 'Do you wish to delete the comments section from this webpage?',
+        "pc_delfil" => 'Do you wish to delete this comments file from your website?',
+    	"pc_delyapag" => 'Removed comments section from this webpage!',
+        "pc_delyafil" => 'Comments file deleted from server!',
+        "pc_delext" => 'There is not comments file to delete as no one has left a comment!',
+     	"pc_ndelpag" => 'I did not delete the comments section from this webpage.',
+        "pc_ndelfil" => 'I did not delete comments file from your website.',
+
+	//edit pages
+        "pc_edt" => 'Editing',
+        "pc_emot" => 'Emot.',
+        "pc_emotic" => 'Emoticons',
+        "pc_cpt" => 'Captcha',
+        "pc_ncomm" => 'Number of Comments by page',
+        "pc_ncommc" => 'No. Comments by page',
+        "pc_ord" => 'Order',
+        "pc_nord" => 'Number of Order',
+        "pc_nword" => 'Number of Characters',
+        "pc_q_nword" => 'number of characters that will be showed in list of pages or blog',
+        "pc_nwordc" => 'No. characters',
+        "pc_group" => 'Group',
+        "pc_moder" => 'Moder.',
+        "pc_cmoder" => 'Moderated comments',
+        "pc_img" => 'IMG.',
+        "pc_ruta" => 'Image',
+        "pc_q_ruta" => 'to put where is image, for example: images/yourimage.jpg',
+        "pc_user" => 'User',
+        "pc_wuser" => 'Works with FrontEnd user plugin',
+        "pc_wruser" => 'Work with user',
+        "pc_userdel" => 'Permit to user that delete main comment although had replies',
+        "pc_ctgr" => 'Category', 
+        "pc_vctgr" => 'View category entries', 
+        "pc_velegctgr" => 'You can choose a category or write one new.', ///////
+        "pc_delreg" => 'Entry deleted!',
+		"pc_chsav" => 'Changes saved.',
+		"pc_notchsav" => 'Unsaved changes. There is already an entry for that group.',
+        "dcrs" => '(Descending)',
+        "icrs" => '(Ascending)',
+        "pc_more" => 'more',
+		"pc_tag" => 'Tags',
+		"pc_q_tag" => 'separate tag with commas.',
+		"pc_titletoform" => 'Title to form',
+
+	//group
+        "gp_addgrp" => 'Add group',
+        "gp_edtgrp" => 'Edit group',
+        "gp_delgrp" => 'Delete group',
+        "gp_viegrp" => 'View groups',
+        "gp_grp" => 'Group',
+        "gp_q_grp" => 'group: name, number, name+number,... it is used for the function ls_pagesblg()',
+        "gp_c_grp" => 'Caption',
+        "gp_qc_grp" => 'will be used at first of list of news.',
+        "gp_n_grp" => 'No. pages in list',
+        "gp_d_grp" => 'Order D(descending) or A(ascending)',
+        "gp_o_grp" => 'Order by',
+        "gp_o1_grp" => 'According to order of entry in system comments',
+        "gp_o2_grp" => 'According to date of publication of pages',
+        "gp_o3_grp" => 'According to field number of order in system comments',
+        "gp_st_grp" => 'Style',
+        "gp_stl_grp" => 'Group style',
+        "gp_stl1_grp" => 'Blog style',
+        "gp_stl2_grp" => 'News style',
+        "gp_pagsav" => 'Group saved.',
+        "gp_pagyasav" => 'Group already saved, only you can to edit it.',
+        "gp_grpedt" => 'Group edited.',
+        "gp_nonews" => 'Do not exist Pages for the group: ', 
+        "gp_pagbygrp" => 'Pages inside group: ', 
+        "gp_tmplt_grp" => 'Template of group: ', 
+
+        //backup
+        "backup" => 'Backups',
+        "backup_c" => 'Create Backup',
+        "backup_cd" => 'Copy created',
+        "ndel" => 'Remove this entry?',
+        "ndelc" => 'Remove register number ',
+        "ndelf" => 'Remove this log',
+        "ndelfc" => 'Remove log ',
+        "rec_log" => 'Recover log?',
+        "recpd_log" => 'Log Recovered!',
+        "deltd_log" => 'Log deleted!',
+        "listbackup" => 'List of Backups',
+        "delsure" => 'Are you sure?',
+
+        //users
+        "wrtusr" => 'To write a comment you must be <b><i>logged in</i></b> or ',
+        "nc_rgs" => 'Register.',
+        "nc_rgsr" => 'Register',
+        "nc_auth" => 'Author:',
+
+        //Form
+		"Nb" => 'Name',
+    	"Em" => 'Email',
+		"Cm" => 'Comment',
+        "Ms" => 'Message',
+ 		"Ev" => 'Send',
+        "Ps" => 'posted on',
+        "Rf" => 'Required field',
+        "Co" => 'Required fields empty.',
+		"Code" => 'You entered this code:',
+		"Cap" => 'The correct code was:',
+        "Cpt" => 'Write Verification Code',
+        "Sub" => 'Subject',
+        "Ct" => 'Location',
+        "mf" => 'Reply',
+        "sh_pg" => 'Pages',
+        "ad_pg" => 'Add',
+        "em_text" => '(will never be shown)',
+        "rl" => 'If you cann\'t see Verification Code clearly.',
+		"reload" => 'Reload',
+		"code"  =>'Captcha',
+		"red" => '*',
+		"Prever"  =>'Prev',
+		"Nexter"  =>'Next',
+		"Razdel"  =>'',
+		"bkt"  =>')',
+		"bkti"  =>'',
+		"otvet"  =>'Reply:',
+		"hh"  =>'Comment',
+		"back"  =>'Back',
+		"text"  =>'',
+        "moder" => 'Public',
+        "redir" => 'Redirection in ',
+        "redir1" => ' seconds. If you are not redirected push ',
+        "nombre" => 'Name',
+        "city" => 'City',
+        "subject" => 'Subject',
+        "email" => 'Email',
+        "comentario" => 'Comment',
+        "errphpmail" => 'Folder PHPMailer_v5.1 does not exist inside folder PLUGINS or file class.phpmailer.php is missing.', //english
+        "MSG_charERR" => 'Error: Number of characters exceeds the limit.',  //---------------
+        "pc_bold" => 'Bold',
+        "pc_italic" => 'Italic',
+        "pc_underline" => 'Underline',
+        "pc_link" => 'Insert Link',
+        "pc_img" => 'Image',
+        "pc_color" => 'Change Colour',
+        "pc_black" => 'Black',
+        "pc_red" => 'Red',
+        "pc_yellow" => 'Yellow',
+        "pc_pink" => 'Pink',
+        "pc_green" => 'Green',
+        "pc_orange" => 'Orange',
+        "pc_purple" => 'Purple',
+        "pc_blue" => 'Blue',
+        "pc_beige" => 'Beige',
+        "pc_brown" => 'Brown',
+        "pc_teal" => 'Teal',
+        "pc_navy" => 'Navy',
+        "pc_maroon" => 'Maroon',
+        "pc_limegreen" => 'Limegreen',
+        "pc_white" => 'White',///////////////////
+        "pc_url" => 'Insert URL:',///////////////////
+        "pc_urlbbc" => 'Text of link?:',///////////////////
+        "pc_urlbbc_n" => 'URL will not be to insert.', ///////////////////
+		"pc_reply" => 'Write a reply',
+
+		//pagination
+		"Pag"  =>'Pages',
+        "nextp" => 'Next',
+        "prevp" => 'Previous',
+		"prev_page"  =>'Prev',
+		"next_page"  =>'Next',
+		"Prev"  =>'<<',
+		"Next"  =>'>>',
+		"pc_firstpage" => 'First page', ////////////////////--------------
+		"pc_lastpage" => 'Last page', ////////////////////--------------
+		"pc_separate" => '...'
+);
+
+?>

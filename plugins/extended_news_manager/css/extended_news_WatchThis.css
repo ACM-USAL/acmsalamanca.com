@@ -1,0 +1,151 @@
+/*Extended News CSS */
+
+/*News Page*/
+.ext_news{
+	clear: both;
+	width: 100%;
+	margin-left: -40px;
+}
+
+a img, a:link img { border: 0 none; }
+
+.ext_news_title{
+	font-size: 20px;
+    width: auto;
+    padding: 8px 10px;
+    overflow:hidden;    
+	border: 1px solid #ccc;
+	background-color: #eee;	
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;	
+}
+.ext_news_title a{
+	text-decoration: none;
+}
+.ext_news_date{
+	text-align: right;
+	padding-right: 5px;
+	font-size: 12px;
+	margin-top: 5px;
+}
+.ext_news_link{
+	float: right;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 5px;
+}
+.ext_news_link a{
+	text-decoration: none;
+}
+#fb-root{
+	text-align: center;
+}
+.ext_news_permanent{
+	width: auto;
+	font-size: 14px;
+	font-weight: bold;
+
+}
+.ext_news_permanent_link{
+	font-weight: bold;
+	font-size: 11px;
+	text-decoration: none;
+}
+.ext_news_comments{
+	position:relative;
+    width: auto;
+    padding: 10px;
+    color:inherit;
+    margin: 20px -10px 20px -20px; 
+	text-align: center;
+
+}
+.ex_comments{
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	padding: 2px;
+}
+.ext_news_content{
+    padding: 10px;
+	color:#000;
+
+}
+/*Latest News Menu*/
+.ext_news_latest{
+	font-size: 14px;
+    width: auto;
+    padding: 8px;
+	background-color: inherit;
+    overflow:hidden;    
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+	border: 1px solid #ccc;
+}
+.rss_holder{
+	margin: 5px;
+}
+.ext_news_list{
+	padding: 3px;	
+	font-size: 14px;
+	margin-top: -10px
+}
+.ext_news_list_items{
+	padding: 2px 2px 0 2px;
+}
+.ext_news_short{
+	margin-left: 10px;	
+	font-size: 10px;
+}
+.paginate{
+	
+}
+.ext_news_paginate{
+	text-align:center;
+	height:22px;
+	line-height:21px;
+	clear:both;
+	padding-top:5px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.ext_news_paginate a:link, .ext_news_paginate a:visited{
+	padding:7px;
+	padding-top:4px;
+	padding-bottom:4px;
+	border:1px solid #933;
+	margin-left:10px;
+	text-decoration:none;
+	background-color:#F5F5F5;
+	color:#933;
+	width:22px;
+	font-weight:bold;
+}
+
+.ext_news_paginate a:hover {
+	background-color:#903;
+	border:1px solid #C03;
+	color:#fff;	
+}
+
+.ext_news_paginate .active_tnt_link {
+	padding:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+	border:1px solid #BBDDFF;
+	margin-left:10px;
+	text-decoration:none;
+	background-color:#DDEEFF;
+	color:#0072BC;
+	cursor:default;
+}
+.feed_icons{
+	float: right;
+}
+.rss{
+	float: left;
+}

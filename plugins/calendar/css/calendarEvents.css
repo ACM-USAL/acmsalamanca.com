@@ -1,0 +1,20 @@
+#calendarEvents {
+
+}
+#calendarEvents th {
+    font-weight: bold;
+}
+#calendarEvents th.title {
+    text-align: left;
+}
+#calendarEvents th.date, td.date {
+    text-align: right;
+}
+#calendarEvents td {
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+}
+#calendarEvents tr:hover {
+    background-color: #fff8b9;
+}
+

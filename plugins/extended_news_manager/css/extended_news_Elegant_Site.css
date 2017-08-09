@@ -1,0 +1,122 @@
+/*Extended News CSS */
+
+/*News Page*/
+.ext_news{
+
+}
+.ext_news_title{
+	clear: both;
+	font-size: 20px;
+    width: auto;
+    padding: 0 10px;
+    overflow:hidden;    
+	border: 2px solid #000;
+	background-color: #09F;	
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;	
+}
+.ext_news_title a{
+	color: #FFF;
+}
+.ext_news_date{
+	text-align: right;	
+	font-size: 12px;
+	margin-top: 5px;}
+
+
+.ext_news_link{
+	float: right;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.ext_news_link a{
+	text-decoration: none;
+}
+.ext_news_permanent{}
+.ext_news_comments{
+	position:relative;
+    width: auto;
+    padding: 20px;
+	text-align: center;
+    color:inherit;    
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+	border: 2px solid #ccc;
+}
+.ext_news_content{
+    padding: 10px;
+}
+.ext_news_latest{
+	font-size: 14px;
+    width: auto;
+	margin: -15px -0 0 -30px;
+    padding: 8px;
+	background-color: #eee;
+    overflow:hidden;    
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+	border: 1px solid #ccc;
+}
+/*Latest News Menu*/
+
+.ext_news_list{
+	padding: 10px 10px 30px 10px;;	
+	font-size: 14px;
+	margin-top: -10px
+}
+.ext_news_list_items{
+	padding: 2px 2px 0 2px;
+}
+.ext_news_short{
+	margin-left: 10px;	
+	font-size: 10px;
+}
+.paginate{
+	
+}
+.ext_news_paginate{
+	text-align:center;
+	height:22px;
+	line-height:21px;
+	clear:both;
+	padding-top:5px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.ext_news_paginate a:link, .ext_news_paginate a:visited{
+	padding:7px;
+	padding-top:4px;
+	padding-bottom:4px;
+	border:1px solid #ddd;
+	margin-left:10px;
+	text-decoration:none;
+	background-color:#F5F5F5;
+	color:#0072bc;
+	width:22px;
+	font-weight:bold;
+}
+
+.ext_news_paginate a:hover {
+	background-color:#DDEEFF;
+	border:1px solid #BBDDFF;
+	color:#0072BC;	
+}
+
+.ext_news_paginate .active_tnt_link {
+	padding:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+	border:1px solid #BBDDFF;
+	margin-left:10px;
+	text-decoration:none;
+	background-color:#DDEEFF;
+	color:#0072BC;
+	cursor:default;
+}

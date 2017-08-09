@@ -1,0 +1,235 @@
+/*<STYLE TYPE="text/css">*/
+
+/*/////////////////////////////////*/
+/*///////    FORM              ////*/
+/*/////////////////////////////////*/
+
+.formid {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+}
+
+#content .form img {
+	border: none;
+	margin-bottom: 0px;
+}
+
+.formsp {
+        border: medium double;
+        min-width: 435px;
+        padding-top: 0px;
+        width: 50%;
+}
+
+.form{
+	margin-bottom: 7px;
+	display:block;
+}
+
+.form .textright{
+	width:120px;
+	float:left;
+	text-align:right;
+	padding-right:0px;
+	margin-bottom:10px;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.form .email {
+        font-style: oblique;
+        font-size: 13px;
+	width:300px;
+}
+/*
+.form .email:hover {
+        font-size: 15px;
+}*/
+
+.form .input{
+        float: left;
+        height: 20px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        width: auto;
+        word-wrap: break-word;
+}
+
+.form .input .text{
+	width:300px;
+	font-size:13px;
+}
+/*
+.form .input .text:hover, .text:focus{
+	font-size: 15px;
+}*/
+
+.form .textarea{
+        float: left;
+        font-size: 13px;
+        height: auto;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        word-wrap: break-word;
+}
+
+.form .textarea .text{
+	width:400px;
+	font-size:13px;
+	height:150px;
+}
+/*
+.form .textarea .text:hover, .text:focus{
+	font-size: 15px;
+}*/
+
+.form .textarea .nwords{
+	color: #999999;
+	font-size: 10px;
+}
+
+form h3{
+	font-size:14px;
+	padding:10px 0;
+	border-top:#CCCCCC dashed 1px;
+	border-bottom:#CCCCCC dashed 1px;
+}
+.form b{
+	color:#FF0000;
+	font-size:18px;
+	margin-right:0px;
+	font-weight:normal;
+}
+.form .smail{
+	background-color: #E0E0E0;
+	border: 1px solid;
+	margin: 5px auto 6px;
+	padding-left: 2px;
+	text-align: left;
+	width: 80%;
+}
+
+.form .smail a{
+        text-decoration: none;
+}
+
+#content .form .smail img{
+        border: none;
+        margin-bottom: 1px;
+        margin-right: 2px;
+}
+
+.form .smail img.smail{
+        border: none;
+        margin-bottom: 1px;
+        margin-right: 2px;
+}
+
+.form #captch{
+	margin-bottom:10px;
+}
+
+.form #captch img.capt{
+	border: none;
+	vertical-align:middle;
+	margin-right:10px;
+}
+
+.form .cap_input{
+	margin-bottom:10px;
+        margin-left:0px;
+}
+.form .cap_input input{
+        margin-left: 20px;
+        margin-right: 10px;
+        text-align: center;
+        width: 90px;
+}
+
+.form .submit {
+	width:auto;
+}
+
+.form .submit input{
+        font-size: 16px;
+	width:auto;
+	margin-right:26px;
+	margin-left:20px;
+}
+
+.form .bbcode {
+	margin-top: 5px;
+	text-align: center;
+}
+
+.form .bbcode b{
+       font-size: 9px;
+       font-weight: normal;
+       text-align: left;
+}
+
+#content .form .bbcode img.bbc{
+	background-image: url("../../pages_comments/images/bbc/bbc_bg.gif");
+	border: none;   
+	cursor: pointer;
+	margin-bottom: 5px;
+	margin-left: 3px;
+	vertical-align: top;
+}
+
+.form .bbcode img.bbc{
+	background-image: url("../../pages_comments/images/bbc/bbc_bg.gif");
+	border: none;   
+	cursor: pointer;
+	margin-bottom: 5px;
+	margin-left: 3px;
+	vertical-align: top;
+}
+
+
+#content .form .bbcode img.bbc_d{
+	border: medium none;
+	margin: 0 2px 0 5px;
+}
+
+.form .bbcode img.bbc_d{
+	border: medium none;
+	margin: 0 2px 0 5px;
+}
+
+.form .bbcode select{
+	font-size: 11px;
+	margin-left: 3px;
+	margin-top: 0px;
+	vertical-align: top;
+}
+
+.form .bbcode a{
+/*	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #D0D0D0;
+	border: 1px solid #808080;
+	color: #404040;
+	font-size: 12px;
+	margin-left: 3px;
+	padding: 1px 2px;
+	text-decoration: none;
+	vertical-align: top;*/
+    background-image: url("../../pages_comments/images/bbc/bbc_bg.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #404040;
+    font-size: 12px;
+    margin-left: 3px;
+    padding: 4px 7px;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.form .bbcode .button{
+	font-size: 11px;
+	vertical-align: top;
+
+}

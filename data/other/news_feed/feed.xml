@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title><![CDATA[]]>Example Extended News RSS Feed Title</title>
+		<description><![CDATA[]]>Example Extended News RSS Feed Description</description>
+		<link></link>
+		<image>
+			<title>Example Extended News RSS Feed Image Title</title>
+			<link>Example Extended News RSS Feed Site Link</link>
+			<url>Example Extended News RSS Feed Image </url>
+		</image>
+		<language>en_US</language>
+		<date>Date</date>
+		<generator>Extended News RSS Feed</generator>
+		<item>
+			<title><![CDATA[Example ]]></title>
+			<description><![CDATA[Example ]]></description>
+			<pubDate>10 May 2011</pubDate>
+			<link>Example</link>
+		</item>
+
+	</channel>
+</rss>
