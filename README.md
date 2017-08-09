@@ -110,7 +110,7 @@ Pasos necesarios par llevar a cabo la instalación de la web:
   `comentarios` varchar(300) NOT NULL,
   `pathimagen` varchar(300) NOT NULL,
   PRIMARY KEY (`email`)
-	) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 	
 	```
 Y el usuario que acceda tiene que tener permisos de select, update y delete.
