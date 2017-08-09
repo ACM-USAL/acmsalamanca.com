@@ -113,7 +113,7 @@ Pasos necesarios par llevar a cabo la instalación de la web:
 	) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 	
 	```
-Y el usuario que acceda tiene que tener permisos de select, update y delete.
+	Y el usuario que acceda tiene que tener permisos de select, update y delete.
 
 5. **Últimos detalles**
 
