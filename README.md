@@ -84,7 +84,7 @@ Pasos necesarios par llevar a cabo la instalación de la web:
 	La base de datos tiene que contener dos tablas:
 
 	```sql
-CREATE TABLE `usuarios_confirmados` (
+	CREATE TABLE `usuarios_confirmados` (
   `email` varchar(30) NOT NULL,
   `cargo` varchar(30) NOT NULL,
   `nombre` varchar(30) NOT NULL,
@@ -95,11 +95,12 @@ CREATE TABLE `usuarios_confirmados` (
   `comentarios` varchar(300) NOT NULL,
   `pathimagen` varchar(300) NOT NULL,
   PRIMARY KEY (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+	) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+	
 	```
 	
 	```sql
-CREATE TABLE `usuarios_pendientes` (
+	CREATE TABLE `usuarios_pendientes` (
   `email` varchar(30) NOT NULL,
   `nombre` varchar(30) NOT NULL,
   `apellido` varchar(30) NOT NULL,
@@ -109,7 +110,8 @@ CREATE TABLE `usuarios_pendientes` (
   `comentarios` varchar(300) NOT NULL,
   `pathimagen` varchar(300) NOT NULL,
   PRIMARY KEY (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+	) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+	
 	```
 Y el usuario que acceda tiene que tener permisos de select, update y delete.
 
