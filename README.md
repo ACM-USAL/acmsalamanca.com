@@ -85,16 +85,16 @@ Pasos necesarios par llevar a cabo la instalación de la web:
 
 	```sql
 	CREATE TABLE `usuarios_confirmados` (
-  `email` varchar(30) NOT NULL,
-  `cargo` varchar(30) NOT NULL,
-  `nombre` varchar(30) NOT NULL,
-  `apellido` varchar(30) NOT NULL,
-  `telefono` varchar(15) NOT NULL,
-  `ocupacion` varchar(40) NOT NULL,
-  `biografia` varchar(300) NOT NULL,
-  `comentarios` varchar(300) NOT NULL,
-  `pathimagen` varchar(300) NOT NULL,
-  PRIMARY KEY (`email`)
+	`email` varchar(30) NOT NULL,
+	`cargo` varchar(30) NOT NULL,
+	`nombre` varchar(30) NOT NULL,
+	`apellido` varchar(30) NOT NULL,
+	`telefono` varchar(15) NOT NULL,
+	`ocupacion` varchar(40) NOT NULL,
+	`biografia` varchar(300) NOT NULL,
+	`comentarios` varchar(300) NOT NULL,
+	`pathimagen` varchar(300) NOT NULL,
+	PRIMARY KEY (`email`)
 	) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 	
 	```
