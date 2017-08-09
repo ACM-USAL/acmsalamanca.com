@@ -13,9 +13,9 @@ Pasos necesarios par llevar a cabo la instalación de la web:
 	Debido al control de acceso a directorios restringidos y a la re-dirección de errores:
 	
 	```bash
-		<Directory "/var/www/html">
-			AllowOverride All
-		</Directory>
+	<Directory "/var/www/html">
+		AllowOverride All
+	</Directory>
 	```
 
 	Módulos necesarios:
@@ -75,8 +75,9 @@ Pasos necesarios par llevar a cabo la instalación de la web:
  			--- Pass del correo origen ---
  		</pass>
  	</email>
-</ACM_WEB>
-```
+	</ACM_WEB>
+	
+	```
 
 4. **Configuración de la base de datos**
 
@@ -95,7 +96,9 @@ CREATE TABLE `usuarios_confirmados` (
   `pathimagen` varchar(300) NOT NULL,
   PRIMARY KEY (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+	
 	```
+	
 	```sql
 CREATE TABLE `usuarios_pendientes` (
   `email` varchar(30) NOT NULL,
@@ -108,6 +111,7 @@ CREATE TABLE `usuarios_pendientes` (
   `pathimagen` varchar(300) NOT NULL,
   PRIMARY KEY (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+	
 	```
 Y el usuario que acceda tiene que tener permisos de select, update y delete.
 
