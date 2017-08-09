@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><title><![CDATA[Un bot para organizarnos a todos]]></title><date><![CDATA[Thu, 01 Jan 2015 03:07:00 +0100]]></date><tags><![CDATA[]]></tags><private><![CDATA[]]></private><image><![CDATA[]]></image><content><![CDATA[&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;./data/uploads/bot1.jpg&quot; style=&quot;width: 50%; height: 50%; float: left; margin-right: 20px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hoy desde ACM Usal queremos contaros un poquito cómo nos organizamos&lt;/p&gt;
+
+&lt;p&gt;internamente. Como bien es sabido ya, la mayor parte de nosotros somos estudiantes de informática, lo que nos lleva a tener la mentalidad de automatizarlo todo. Somos muchos, de muchas partes del mundo, ya que nuestra asociación cuenta con algún miembro extranjero o que se encuentra fuera y no podemos comunicarnos de forma sencilla presencialmente. Debido a este inconveniente, utilizamos las nuevas tecnologías, que para eso estudiamos ciencias de la computación. En concreto, utilizamos la plataforma libre de Telegram.&lt;/p&gt;
+
+&lt;p&gt;Telegram es un servicio de mensajería en internet que nos permite compartir todo tipo de archivos y organizar a todos los socios en grupos. Una de las peculiaridades de Telegram es que ofrece una API para uso de cualquier persona, lo que nos dió la idea de crear un bot que nos ayude a mantener estos grupos. Este bot llamado AcmSIGBot se encarga de responder a las preguntas que le hacemos.&lt;/p&gt;
+
+&lt;p&gt;Internamente tenemos varios grupos, dos grupos generales en el que estamos todos los socios. ACM-Usal es un grupo en el que se hablan temas importantes de la asociación, su finalidad es que todos nos enteremos y que una conversación importante no sea olvidada por otros temas de conversación secundarios. Para este tipos de temas tenemos el otro grupo general, ACM-Offtopic en él se trata cualquier tema de cualquier tipo. En muchas ocasiones en este grupo de temas secundarios salen debates muy interesantes, o importantes noticias relacionadas con el mundo de las nuevas tecnologías y la informática.&lt;/p&gt;
+
+&lt;p&gt;El resto de grupos son grupos monotema, es decir, grupos en los que se trata un tema específico (inteligencia artificial, robótica, etc). A este tipo de grupos se puede unir cualquier persona interesada en el tema que se trata en ellos. Es en este punto donde entra la importancia de AcmSIGBot. Los miembros le podemos preguntar, en cualquier momento y en cualquier de los grupos generales, que grupos monotema existen y el bot nos responderá con una lista de estos grupos. Si le decimos que nos queremos unir a un grupo en concreto, el bot avisará en ese grupo para que alguien añada a la persona interesada. Otra de las funciones de AcmSIGBot es la de dar la bienvenida a todos los nuevos miembros que se unen al grupo ACM-Usal, estos son añadidos por el presidente.&lt;/p&gt;
+
+&lt;p&gt;Acm Respuestas, nuestra plataforma para que los alumnos y compañeros del grado de informática expongan sus dudas y otros compañeros se las respondan también está vigilada por AcmSIGBot, cuando alguien pone alguna pregunta, nuestro bot nos avisa para que intentemos ayudar a resolver la duda a nuestro compañero lo más rápido posible.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Las principales órdenes del bot son:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://acmsalamanca.com/data/uploads/bot2.png&quot; style=&quot;width: 100%; height: 100%;&quot; /&gt; &lt;img alt=&quot;&quot; src=&quot;http://acmsalamanca.com/data/uploads/bot4.png&quot; style=&quot;width: 100%; float: left; height: 100%;&quot; /&gt; &lt;img alt=&quot;&quot; src=&quot;http://acmsalamanca.com/data/uploads/bot3.png&quot; style=&quot;width: 100%; height: 100%; float: left;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+
+]]></content></item>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><title><![CDATA[Perl: Haciendo lo fácil fácil y lo difícil posible]]></title><date><![CDATA[Wed, 01 Jan 2014 03:03:00 +0100]]></date><tags><![CDATA[]]></tags><private><![CDATA[]]></private><image><![CDATA[]]></image><content><![CDATA[&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;./data/uploads/img_1160-220x200.png&quot; style=&quot;width: 30%; height: 100%; float: left; margin-right: 20px;&quot; /&gt;El pasado jueves celebramos nuestra primera actividad: un taller de introducción al lenguaje de programación Perl, contando con Diego Martín, miembro del Capítulo, como ponente. En ella conocimos los fundamentos de Perl, utilización de objetos, instalación de módulos y trabajo con bases de datos y ficheros.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Unos 40 alumnos de la Facultad se acercaron al taller. Además, se contó con un streaming en directo del evento, el cual está disponible en diferido en YouTube.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12&quot; style=&quot;margin: auto;&quot;&gt;&lt;iframe frameborder=&quot;0&quot; height=&quot;100%&quot; scrolling=&quot;no&quot; src=&quot;https://www.youtube.com/embed/FwZoC7jJwaA&quot; width=&quot;100%&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Todos los ejemplos de código se encuentran en nuestra cuenta de GitHub, &lt;a href=&quot;http://github.com/ACM-USAL&quot; title=&quot;http://github.com/ACM-USAL&quot;&gt;http://github.com/ACM-USAL&lt;/a&gt;, y la presentación se puede ver en &lt;a href=&quot;usal.acm.org/perl&quot; title=&quot;acmusal.org.es/perl&quot;&gt;usal.acm.org/perl&lt;/a&gt;&lt;/p&gt;
+]]></content></item>

@@ -1,0 +1,9 @@
+article {
+	word-wrap: break-word;
+}
+
+article #nm_post{
+	max-width: 40em;
+}
+/* este css afecta a toda la pagina, pero la mayoria de divs del tema se encuentran en ./theme/FutureImperfect/assets/css/main.css
+las modificaciones hechas a los post se han hecho ahi*/

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Tue, 31 Jan 2017 11:52:51 +0000</pubDate><title><![CDATA[Tablón de anuncios]]></title><url><![CDATA[index]]></url><meta><![CDATA[getsimple, easy, content management system]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Home]]></menu><menuOrder><![CDATA[1]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;div class=&quot;container&quot;&gt;
+	&lt;h1&gt;Titulo de la noticia&lt;/h1&gt;
+
+	&lt;div align=&quot;right&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-md-2&quot; style=&quot;margin:1.5em; margin-bottom:0;&quot;&gt;
+				&lt;div class=&quot;imgAbt&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://localhost/data/uploads/cartel2-220x200.png&quot; style=&quot;width: 270px; height: 270px;&quot; /&gt;&lt;/div&gt;
+			&lt;/div&gt;
+			asdasdafdsf ad sasd asdqasdasdasasaddsafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqaasdassf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdqasdasdafdsf ad sasd asdq
+
+			&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+			&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+			&lt;button class=&quot;btn btn-primary btn-lg&quot; style=&quot;margin:1em&quot; type=&quot;button&quot;&gt;Acceso a la noticia&amp;nbsp;&lt;/button&gt;
+
+			&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+			&lt;hr /&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+]]></content><private><![CDATA[]]></private><author><![CDATA[acmsalamanca]]></author></item>

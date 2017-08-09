@@ -1,0 +1,170 @@
+/*<STYLE TYPE="text/css">*/
+
+/*/////////////////////////////////*/
+/*///////    FORM              ////*/
+/*/////////////////////////////////*/
+
+.formsp {
+        border: medium double;
+        min-width: 550px;
+        padding-top: 8px;
+        width: 80%;
+}
+
+.form{
+	margin-bottom: 7px;
+	display:block;
+}
+
+.form .textright{
+	width:120px;
+	float:left;
+	text-align:right;
+	padding-right:0px;
+	margin-bottom:10px;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.form .email {
+        font-style: oblique;
+        font-size: 13px;
+	width:300px;
+}
+
+.form .input{
+        float: left;
+        height: 20px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        width: auto;
+        word-wrap: break-word;
+}
+
+.form .input .text{
+	width:300px;
+	font-size:15px;
+}
+
+.form .textarea{
+        float: left;
+        font-size: 15px;
+        height: auto;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        word-wrap: break-word;
+}
+
+.form .textarea .text{
+	width:400px;
+	font-size:15px;
+	height:150px;
+}
+
+.form .textarea .nwords{
+	color: #999999;
+	font-size: 10px;
+}
+
+form h3{
+	font-size:14px;
+	padding:10px 0;
+	border-top:#CCCCCC dashed 1px;
+	border-bottom:#CCCCCC dashed 1px;
+}
+.form b{
+	color:#FF0000;
+	font-size:18px;
+	margin-right:0px;
+	font-weight:normal;
+}
+.form .smail{
+	border-top:#CCCCCC dashed 1px;
+	border-bottom:#CCCCCC dashed 1px;
+	margin-bottom:10px;
+        padding: 0 0 0 3px;
+        text-align: center;
+}
+
+.form .smail a{
+        text-decoration: none;
+}
+
+
+#content .form .smail img{
+        border: none;
+        margin-bottom: 1px;
+        margin-right: 2px;
+}
+
+.form .smail img{
+        border: none;
+        margin-bottom: 1px;
+        margin-right: 2px;
+}
+
+#content .form img.capt{
+	vertical-align:middle;
+	margin-right:10px;
+}
+
+ .form img.capt{
+	vertical-align:middle;
+	margin-right:10px;
+}
+
+.form .captch{
+	margin-bottom:10px;
+}
+
+#content .form .captch img{
+       border: none;
+}
+
+ .form .captch img{
+       border: none;
+}
+
+.form .captch input{
+        font-size: 16px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        width: auto;
+}
+
+.form .cap_input{
+	margin-bottom:10px;
+        margin-left:0px;
+}
+.form .cap_input input{
+        margin-left: 20px;
+        margin-right: 26px;
+        text-align: center;
+        width: 90px;
+}
+
+.form .submit {
+	width:auto;
+}
+
+.form .submit input{
+        font-size: 16px;
+	width:auto;
+	margin-right:26px;
+	margin-left:20px;
+}
+
+.form .bbcode {
+       font-size: 9px;
+       font-weight: normal;
+       line-height: 12px;
+       text-align: left;
+       padding-left: 4px;
+}
+
+.form .bbcode b{
+       font-size: 9px;
+       font-weight: normal;
+       text-align: left;
+}
+

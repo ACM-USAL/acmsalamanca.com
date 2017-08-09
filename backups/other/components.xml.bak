@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel><item><title><![CDATA[Sidebar]]></title><slug>sidebar</slug><value><![CDATA[&lt;?php
+ $id = (isset($_GET[&#039;id&#039;])) ? $_GET[&#039;id&#039;] : &#039;&#039;;
+echo &#039;
+&lt;h2 align=&quot;middle&quot;&gt;ACM USAL Chapter&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;div  align=&quot;center&quot;&gt;
+&lt;img src=&quot;/imgs_/usal.png&quot;height=&quot;200&quot; width=&quot;200&quot; align=&quot;middle&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt; &#039;;
+ c_calendarEvents(5);
+echo &#039;&lt;div id=&quot;texto_acm&quot; align=&quot;justify&quot;&gt;
+&lt;p &gt;
+La Association for Computing Machinery (ACM) es la mayor asociación académica y profesional sobre computación a nivel mundial, a nivel local se divide en capítulos (chapters), entre los que se encuentra ACM USAL.
+&lt;/p&gt;
+&lt;p&gt;
+Nuestro principal objetivo es trabajar en la Universidad de Salamanca para favorecer la divulgación y el avance del conocimiento en Informática.
+&lt;/p&gt;
+&lt;/div&gt;&#039;;
+
+
+
+?&gt;
+
+
+]]></value></item><item><title><![CDATA[Tagline]]></title><slug>tagline</slug><value><![CDATA[]]></value></item></channel>
