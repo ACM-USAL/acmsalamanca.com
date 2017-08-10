@@ -25,7 +25,7 @@ Pasos necesarios par llevar a cabo la instalación de la web:
 
 	En este punto se debería mostrar el contenido de la web, pero sin ver sin hojas de estilo y sin ejecutarse el javascript, esto es porque getsimplecms asocia el path que le asignemos en la administracion con los templates y la carpeta script, tenemos dos formas de solucionarlo para poder trabajar con la web:
 
-2. **Modificación de Paths**
+2. **Modificación de Usuario**
 
 	* **Opción 1**:
 
