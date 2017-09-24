@@ -9,10 +9,9 @@ $destinatarios=[];foreach ($xml->destinatarios->id as $id) {array_push($destinat
 $token_bot=$xml->token_bot;
 $IP_base_sql=$xml->IP_base_sql;
 
-$ruta_proyecto="/var/www/html/";
-$ruta_imagenes_pendientes="./imagenes_pendientes/";
-$ruta_imagenes_miembros="./imagenes_miembros/";
-
+$ruta_proyecto=$xml->ruta_proyecto;
+$ruta_imagenes_pendientes=$xml->ruta_imagenes_pendientes;
+$ruta_imagenes_miembros=$xml->ruta_imagenes_miembros;
 
 function check_submit($name, $surname, $mail, $student, $phone, $bio, $comments,$imagen_campo)
 {
@@ -108,8 +107,6 @@ function check_submit($name, $surname, $mail, $student, $phone, $bio, $comments,
                          $content ="<font color='red'>Este email ya se ha registrado, esta pendiente de confirmacion</font>";
                         }
                         else  $content ="<font color='red'> No se ha podido procesar tu solicitud</font>";
-			var_dump($mysqli);
-	var_dump($telefono);
                         return $content;
                     }
                     else{
@@ -121,6 +118,7 @@ function check_submit($name, $surname, $mail, $student, $phone, $bio, $comments,
 
                         }
                         else{
+			    chmod($pathFinal,0755);
                             return "OK";
                         }
                     }
@@ -247,6 +245,37 @@ $acentos = $mysqli->query("SET NAMES 'utf8'");
     }
 
 
+function modificarMiembro($parametros){
+if (empty($parametros['nombre']) || empty($parametros['apellido']) || empty ($parametros['cargo']) || empty($parametros['telefono']) || empty ($parametros['email'])) return -2;
+
+     global $Mysql_Usuario_add;
+    global $Mysql_usuario_pass;
+    global $Mysql_base;
+    global $IP_base_sql;
+    global $ruta_proyecto;
+
+    $mysqli = new mysqli($IP_base_sql, $Mysql_Usuario_add, $Mysql_usuario_pass, $Mysql_base);
+    if ($mysqli->connect_errno) {
+        return -1;
+    }
+
+$acentos = $mysqli->query("SET NAMES 'utf8'");
+$sql1 = 'update usuarios_confirmados set nombre="'.$mysqli->real_escape_string($parametros['nombre']).'", apellido="'.$mysqli->real_escape_string($parametros['apellido']).'", cargo="'.$mysqli->real_escape_string($parametros['cargo']).'", telefono="'.$mysqli->real_escape_string($parametros['telefono']).'" where email="'.$mysqli->real_escape_string($parametros['email']).'";';
+
+$salida=1;
+if ($mysqli->query($sql1) === TRUE) {
+    $salida = 1;
+} else {
+    $salida = -3;
+}
+
+$mysqli->close();
+
+    
+  
+    return $salida;
+
+    }
 
 
 
@@ -302,7 +331,7 @@ $acentos = $mysqli->query("SET NAMES 'utf8'");
     }
 
 
-   rename($ruta_proyecto.$row["pathimagen"],$ruta_proyecto.$rutafinal);
+   rename($ruta_proyecto.substr($row["pathimagen"],2),$ruta_proyecto.substr($rutafinal,2));
 
     return 1;
 
@@ -311,7 +340,7 @@ $acentos = $mysqli->query("SET NAMES 'utf8'");
 
 
 
-    function getMiembrosActivos($cargo){
+  function getMiembrosActivos($cargo){
        global $Mysql_Usuario_add;
     global $Mysql_usuario_pass;
     global $Mysql_base;
@@ -362,7 +391,8 @@ $acentos = $mysqli->query("SET NAMES 'utf8'");
 			$final[3]=$indice;
 			break;
  		    case "Sponsor":
-			$final[4]=$indice;
+			$cargoadd=$cargoadd+1;
+			$final[4+$cargoadd]=$indice;
 			break;
 		    default:
 			$final[5+$cargoadd]=$indice;
@@ -379,6 +409,9 @@ ksort($final);
 	return getMiembrosActivos(' where cargo = "Afiliado"');
 
     }
+
+
+
 
 
 
