@@ -1,19 +1,17 @@
     <?php
 
 
-//Debug, ahora mismo desactivado, comentar la liniea siguiente y descomentar las otras dos
+//Debug, ahora mismo desactivado, comentar la linea siguiente y descomentar las otras dos
  error_reporting(0);
 //ini_set('display_errors', 'On');
 //error_reporting(E_ALL | E_STRICT);
-
+//phpinfo();
 
 
 
 
 //--------GETSIMPLECMS 
     $plugin_path = GSPLUGINPATH.'acm_usal_register/';
-    $ruta_imagenes_pendientes="./imagenes_pendientes/";
-    $ruta_imagenes_miembros="./imagenes_miembros/";
     $thisfile = basename(__FILE__, '.php');
 
 
@@ -64,7 +62,8 @@ $destinatarios=[];foreach ($xml->destinatarios->id as $id) {array_push($destinat
 $token_bot=$xml->token_bot;
 $emailOrigen=$xml->email->origen;
 $emailPass=$xml->email->pass;
-
+$ruta_imagenes_pendientes=$xml->ruta_imagenes_pendientes;
+$ruta_imagenes_miembros=$xml->ruta_imagenes_miembros;
 
 
 
@@ -235,8 +234,7 @@ $content=
   
       if(isset($_GET['eliminar']))
         {
-              $_GET['eliminar']=htmlentities($_GET['eliminar']);
-             $resultado=eliminarMiembro($_GET['eliminar']);
+             $resultado=eliminarMiembro(htmlentities($_GET['eliminar']));
 
              switch ($resultado){
 
@@ -257,15 +255,51 @@ $content=
                    echo "<p><font color='red'> No se ha podido borrar el usuario de la tabla de  usuarios confirmados</font></p>";
               break;
 
-              case -2:
+              case -3:
                    echo "<p><font color='red'> No se ha podido borrar el usuario de la tabla de usuarios confirmados</font></p>";
               break;
 
 
              }
         }
+      else if(isset($_GET['modificar']))
+        {
+	   if (!isset($_POST['nombre']) || !isset($_POST['apellido']) || !isset($_POST['cargo']) || !isset($_POST['telefono'])){
+		echo "<p><font color='red'> Error en la petición, faltan parametros</font></p>";
+		}
+	   else{
+		 $parametros=[];
+		 $parametros['nombre']=htmlentities($_POST['nombre']);
+		 $parametros['apellido']=htmlentities($_POST['apellido']);
+		 $parametros['cargo']=htmlentities($_POST['cargo']);
+		 $parametros['telefono']=htmlentities($_POST['telefono']);
+		 $parametros['email']=htmlentities($_GET['modificar']);
+		
+	  switch (modificarMiembro($parametros)){
 
-            mostrar_gestion_activos(); 
+			      case 1:
+				     echo "<p><font color='green'> Usuario: ".$parametros['email']." Se ha actualizado con exito</font></p>";
+			      break;
+
+			      case -1:
+				    echo "<p><font color='red'>No se ha podido acceder a la base de datos</font></p>";
+			      break;
+
+			      case -2:
+				   echo "<p><font color='red'> No se ha podido actualizar el usuario, parametros invalidos</font></p>";
+			      break;
+
+			      case -3:
+				   echo "<p><font color='red'> No se ha podido actualizar el usuario</font></p>";
+			      break;
+
+
+			     }
+
+	   }
+        }
+
+      mostrar_gestion_activos(); 
    }
 
    //si estamos en nuevos usuarios
@@ -474,7 +508,6 @@ if($rep==2){
      foreach ($resultado as &$indice) {
       echo ' <br>
          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom:5em;">
-       
          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><img src="http://'.$_SERVER['SERVER_NAME'].substr($indice["pathimagen"],1).'" class="img-rounded"height="220" width="100%"/></div>
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><b><p style="word-wrap: break-word; white-space: normal;">Email:&nbsp;&nbsp;</b>'.$indice["email"].'</p></div>
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><b><p style="word-wrap: break-word; white-space: normal;">Nombre:&nbsp;&nbsp;</b>'.$indice["nombre"].'</p></div>
@@ -523,29 +556,43 @@ if($rep==2){
 
 	//*pendiente: clase de css
      foreach ($resultado as &$indice) {
-      echo ' <br>
+$cargos=['Afiliado','Presidente','Vicepresidente','Secretario','Tesorero','Sponsor'];
+if (($key = array_search($indice["cargo"], $cargos)) !== false) {
+    unset($cargos[$key]);
+}
+      $salida= ' <br>
          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom:10em;">
-       
+             <form action="http://'.$_SERVER['SERVER_NAME'].'/admin/load.php?id=acm_usal_register&gestion=true&modificar='.$indice["email"].'"      method="post">
          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><img src="http://'.$_SERVER['SERVER_NAME'].substr($indice["pathimagen"],1).'" class="img-rounded"height="220" width="100%"/></div>
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><b><p style="word-wrap: break-word; white-space: normal;">Email:&nbsp;&nbsp;</b>'.$indice["email"].'</p></div>
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><b><p style="word-wrap: break-word; white-space: normal;">Nombre:&nbsp;&nbsp;</b>'.$indice["nombre"].'</p></div>
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><b><p style="word-wrap: break-word; white-space: normal;">Apellidos:&nbsp;&nbsp;</b>'.$indice["apellido"].'</p></div>
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><b><p style="word-wrap: break-word; white-space: normal;">Telefono:&nbsp;&nbsp;</b>'.$indice["telefono"].'</p></div>
-	        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><b><p style="word-wrap: break-word; white-space: normal;">Cargo:&nbsp;&nbsp;</b>'.$indice["cargo"].'</p></div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><b><p style="word-wrap: break-word; white-space: normal;">Nombre:&nbsp;&nbsp;</b><input type="text" name="nombre" value = "'.$indice["nombre"].'"></p></div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><b><p style="word-wrap: break-word; white-space: normal;">Apellidos:&nbsp;&nbsp;</b><input type="text" name="apellido" value = "'.$indice["apellido"].'"></p></div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><b><p style="word-wrap: break-word; white-space: normal;">Telefono:&nbsp;&nbsp;</b><input type="text" name="telefono"  value = "'.$indice["telefono"].'"></p></div>
+	        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><b><p style="word-wrap: break-word; white-space: normal;">Cargo:&nbsp;&nbsp;</b>'.'<select class="selectpicker" name="cargo"  >';
+$salida .= '<option autocomplete="off">'.$indice["cargo"].'</option>';
+	foreach ($cargos as $cargo){
+		$salida .= '<option >'.$cargo.'</option>';
+	}
+$salida .='</select></p></div>
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><b><p style="word-wrap: break-word; white-space: normal;">Ocupacion:&nbsp;&nbsp;</b>'.$indice["ocupacion"].'</p></div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 "  style="margin-top:0.5em;"><p style="word-wrap: break-word; white-space: normal;"><b>Biografia:&nbsp;&nbsp;</b>'.$indice["biografia"].'</p></div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top:0.5em;""><p style="word-wrap: break-word; white-space: normal;"><b>Comentarios:&nbsp;&nbsp;</b>'.$indice["comentarios"].'</p></div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-             <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"></div>
+             <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"></div>
               <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                       <a  href="http://'.$_SERVER['SERVER_NAME'].'/admin/load.php?id=acm_usal_register&gestion=true&eliminar='.$indice["email"].'"><button type="button" class="btn btn-danger">Eliminar Miembro</button></a>
+             </div>
+        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+ <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                      <input  type="submit" class="btn btn-primary" value="Modificar Miembro"></input>
              </div>
          </div>
         </br>
         </p>
-        
+        </form>
         </div>';
+echo $salida;
     }
 
 
@@ -555,3 +602,4 @@ if($rep==2){
 
 
     
+
