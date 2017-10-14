@@ -120,12 +120,14 @@ Pasos necesarios par llevar a cabo la instalación de la web:
 	Hay dos carpetas inicialmente vacías cuya subida se ha ignorado, imagenes_miembros e imagenes_pendientes, estas dos carpetas guardan una relación estrecha con la consistencia de la base de datos (contienen las imágenes de los miembros pendientes de ser admitidos y los ya admitidos), hay que asegurarse de que se tienen permisos de escritura sobre estas carpetas.
 	
 	Tambien habria que mover los directorios plugins y themes al directorio principal del proyecto, o sustiuirlos por enlaces simbolicos.
-		Ejemplo: 
-			$rutadelproyecto=/home/myuser/acmsalamanca.com
-			$rutadelservidor=/var/www/
-			ln -s $rutadelproyecto/CMS $rutadelservidor/html
-			ln -s $rutadelproyecto/plugins $rutadelservidor/html/plugins
-			ln -s $rutadelproyecto/themes $rutadelservidor/html/themes
+	Ejemplo: 
+
+	rutadelproyecto=/home/myuser/acmsalamanca.com
+	rutadelservidor=/var/www/
+
+	ln -s $rutadelproyecto/CMS $rutadelservidor/html
+	ln -s $rutadelproyecto/plugins $rutadelservidor/html/plugins
+	ln -s $rutadelproyecto/themes $rutadelservidor/html/themes
 
 	Una vez hecho esto ya se tiene instalada una versión de la web acmsalamanca.com para trabajar con ella.
 
