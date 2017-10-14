@@ -1,5 +1,0 @@
-<ACM_WEB><IP_base_sql>localhost</IP_base_sql><base_sql>--Nombre Base---</base_sql><usuario_sql>--Nombre usuario--</usuario_sql><pass_usuario_sql>--- Contraseña---</pass_usuario_sql><ruta_proyecto>---ruta del proyecto, ejemplo:/var/www/html/</ruta_proyecto><ruta_imagenes_pendientes>--- ruta de las imagenes de los limebros pendientes, ejemplo: ./imagenes_pendientes/---</ruta_imagenes_pendientes><ruta_imagenes_miembros>----ruta de las imagenes de los miembros confirmados, ejemplo: ./imagenes_miembros/---</ruta_imagenes_miembros><token_bot>---Token Bot telegram---</token_bot><destinatarios><id>---1 Id del grupo al que enviar el registro--</id><id>---2 Id del grupo al que enviar el registro--</id><id>---... Id del grupo al que enviar el registro--</id></destinatarios><email><origen>
- 	---- Correo origen ----
- </origen><pass>
- 	--- Pass del correo origen ---
-</pass></email></ACM_WEB>
