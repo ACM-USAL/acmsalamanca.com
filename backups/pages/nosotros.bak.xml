@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<item><pubDate>Sat, 10 Dec 2016 17:53:17 -0600</pubDate><title><![CDATA[Nosotros]]></title><url><![CDATA[nosotros]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Nosotros]]></menu><menuOrder><![CDATA[3]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;p&gt;&amp;lt;?php&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;echo &quot;asdasd&quot;;&lt;/p&gt;
-
-&lt;p&gt;?&amp;gt;&lt;/p&gt;
-]]></content><private><![CDATA[]]></private><author><![CDATA[acmsalamanca]]></author></item>

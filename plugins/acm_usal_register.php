@@ -2,7 +2,7 @@
 
 
 //Debug, ahora mismo desactivado, comentar la linea siguiente y descomentar las otras dos
- error_reporting(0);
+error_reporting(0);
 //ini_set('display_errors', 'On');
 //error_reporting(E_ALL | E_STRICT);
 //phpinfo();
@@ -30,6 +30,7 @@
 
     add_filter('content','registrar_solicitud');
     add_action('nav-tab','generar_menu');
+    add_action('error-404','error404');
 
 //-------FIN -GETSIMPLECMS 
 
@@ -66,6 +67,15 @@ $ruta_imagenes_pendientes=$xml->ruta_imagenes_pendientes;
 $ruta_imagenes_miembros=$xml->ruta_imagenes_miembros;
 
 
+
+    function error404(){
+      $urlRedirect = "http://".$_SERVER['SERVER_NAME']."/Paginas_de_error/videos/";
+      echo '
+        <script>
+             window.location.href = "'.$urlRedirect.'"
+        </script>
+      ';
+    }
 
     function registrar_solicitud($content)
     {

@@ -1,7 +1,7 @@
 <?php
 
 function c_calendarMini() {
-   /*     if(!isset($_GET['month'])) $_GET['month'] = date('n');
+        if(!isset($_GET['month'])) $_GET['month'] = date('n');
         if(!isset($_GET['year'])) $_GET['year'] = date('Y');
     ?>
     <link type="text/css" href="<?php get_site_url(); ?>/plugins/calendar/css/calendarMini.css" rel="stylesheet" />
@@ -19,7 +19,7 @@ function c_calendarMini() {
             c_calendar($_GET['month'], $_GET['year'], 'load.php?id=calendar&edit=', False);
         ?>
     </table>
-<?php*/
+<?php
 
 }
 

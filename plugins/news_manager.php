@@ -181,7 +181,7 @@ nm_reset_options('main');
     $content = nm_ob_get_content(false);
     $content = addslashes(htmlspecialchars($content, ENT_QUOTES, 'UTF-8'));
     if (!$result) 
-      header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
+      header("Location: http://".$_SERVER['SERVER_NAME']."/Paginas_de_error/videos/");
     if (nm_get_option('templatefile'))
       nm_switch_template_file(nm_get_option('templatefile'));
   }

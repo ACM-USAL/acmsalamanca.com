@@ -1,0 +1,9 @@
+ErrorDocument 400 /Paginas_de_error/400.php
+ErrorDocument 401 /Paginas_de_error/401.php
+ErrorDocument 402 /Paginas_de_error/402.php
+ErrorDocument 403 /Paginas_de_error/403.php
+ErrorDocument 404 /Paginas_de_error/404.php
+ErrorDocument 500 /Paginas_de_error/500.php
+Options -Indexes
+
+

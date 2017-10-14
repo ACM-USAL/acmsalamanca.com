@@ -41,8 +41,12 @@ function c_calendarEvents($numberOE = False) {
             $dateYear = substr($date, 4, 7);
             $dateMonth = substr($date, 2, 2);
             $dateDay = substr($date, 0, 2);
+            $actualDay=date('d');
+            $actualMonth=date('m');
+            $actualYear=date('Y');
+
 	    //modificado para mostrar unicamente proximos eventos
-            if($number <= $numberOE and $dateMonth >= $_GET['month'] and $dateYear == $_GET['year']) {
+            if($number <= $numberOE and $dateMonth >= $actualMonth and $dateYear == $actualYear and $dateDay >= $actualDay) {
                 if(isset($events["$dateDay"])) {
                     $events["$dateDay.".rand(0,100)] = $file;
                 } else {
